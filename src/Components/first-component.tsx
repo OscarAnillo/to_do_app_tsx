@@ -36,7 +36,7 @@ export const TodoComponent = () => {
                 onChange={changeHandler} />
             </label>
             <>
-            <button>Add Task</button>
+            <button>{data.length > 0 ? "Add more tasks": "Add a task"}</button>
             </>
             {data.map(task => (
                 <div className='map-div'>
